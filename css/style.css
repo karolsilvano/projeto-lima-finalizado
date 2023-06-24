@@ -1,0 +1,441 @@
+/*estilizando todo o body do site*/
+
+body{
+    background-color: #ffffff;  
+    margin-top: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/*scrool - obs: por algum motivo este comando não está funcionando*/
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+}
+
+header{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 7px #8F0002;
+}
+
+/*estilizando a parte do menu, background sendo utilizado para deixar a imagem que está dentro da div mais escura*/
+.menudnv{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    height: 645px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*posicionando melhor a imagem e colocando um texto em cima dela com ajuda do z-indez*/
+.menudnv img{
+    position: absolute;
+    z-index: -1;
+    top: 17vh;
+    background-color: black;
+}
+
+/*estilizando a tag p do texto na frente da imagem*/
+.menudnv p{
+    color: #F8F8F8;
+    padding: 12%;
+    font-size: 19pt;
+    font-family: "nunito";
+    font-weight: 515;
+}
+
+/*ajustando a imagem da logo*/
+.box-logo{
+    width: 20%;
+
+}
+.box-logo img{
+    padding-left: 30px;
+
+}
+
+/*arrumando o menu, ajustando cada palavra etc*/
+.informacoes{
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+.informacoes ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.informacoes li{
+    padding: 40px 50px;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 540;
+    font-family: 'nunito';
+
+}
+
+/*hover e palavra mudando de cor de acordo com o fundo */
+.informacoes a:hover{
+    background-color: #8F0002;
+    color: white;
+    height: 100%;
+}
+
+.informacoes a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/*-posição das divs principais--*/
+.divcardapio, .divdrinks, .divloc, .divcontato, .divagendar, .divsobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+/*linhas que ficam do lado de cada titulo*/
+.linha1, .linha2 {
+    width: 100%;
+    height: 8px;
+    background-color: #8F0002;}
+
+/*mudando a fonte de cada titulo e ajustando tamanho etc*/
+.cardapio, .drinks, .loc, .contato, .agende, .sobrenoss{
+    text-align: center;
+    margin: 0 20px;
+    font-family: 'nunito';}
+    
+h1, p {
+    margin: 0;}
+        
+/*definindo tamanho e alinhamento de todas as imagens do cardápio*/
+.imagenscomida{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+            
+.imagenscomida2{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+.box-img-prod{
+    margin: 10px;
+    width: 25%;
+    height: 25%;
+    position: relative;
+    display: inline-block;
+}
+
+.box-prod-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a8;
+    opacity: 0;
+    visibility: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 3s ease-in 1s 2 reverse both paused;
+}
+
+.box-img-prod:hover .box-prod-hover{
+    opacity: 1;
+    visibility: visible !important;
+    justify-content: center;
+}
+
+.box-prod-hover p{
+    color: #F8F8F8;
+    justify-content: center;
+    text-align: center;
+    font-family: 'nunito';
+    padding: 15px;   
+}
+
+
+/*ajustando tamanho das imagens dos drinks etc*/
+
+.divdrinks{
+    margin-top: 65px;}
+    
+    .imagensbebida{
+        max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.box-img-prod2{
+    margin: 10px;
+    width: 16%;
+    height: 16%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.box-prod-hover2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a8;
+    opacity: 0;
+    visibility: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 3s ease-in 1s 2 reverse both paused;
+}
+
+.box-img-prod2:hover .box-prod-hover2{
+    opacity: 1;
+    visibility: visible !important;
+    justify-content: center;
+}
+
+.box-prod-hover2 p{
+    color: #F8F8F8;
+    justify-content: center;
+    text-align: center;
+    font-family: 'nunito';
+    padding: 15px;
+}
+
+
+/**/
+
+.divloc{
+    margin-top: 65px;} 
+    
+h4{
+    text-align: center;
+    margin-top: 20px;}
+        
+.mapa{
+    text-align: center;}
+            
+    /*  */
+
+.divcontato{
+    margin-top: 65px;
+}
+
+.divagendar{
+    margin-top: 65px;
+}
+
+.divsobre{
+    margin-top: 65px;
+}
+
+
+.linhactt, .linhactt2 {
+    width: 100%;
+    height: 8px;
+    background-color: #8F0002;}
+
+.imginsta, .imgfacebook, .imgtelefone{
+    height: 60px;
+    width: 60px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.imgifood{
+    height: 110px;
+    width: 100px;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+
+
+/*---------------------------------------------*/
+
+/*titulo agendamento */
+
+.divagendar{
+    margin-top: 65px;
+}
+
+/* .linha1agenda, .linha2agenda {
+    width: 100%;
+    height: 8px;
+    background-color: #8F0002;} */
+
+
+#mescalendario{
+    text-align: center;
+
+}
+
+/*fale conosco*/
+.imginsta, .imgfacebook, .imgemail{
+    height: 60px;
+    width: 60px;
+    margin-left: 470px;
+    margin-top: 40px;
+}
+
+.imgifood{
+    height: 110px;
+    width: 100px;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+
+.imgtelefone{
+    height: 65px;
+    width: 60px;
+    margin-left: 470px;
+    margin-top: 40px;
+}
+
+.insta, .facebook, .telefone, .email, .ifood{
+    display: flex;
+    align-items: center;
+}
+
+.insta img{
+    margin-right: 30px;
+}
+
+.facebook img{
+    margin-right: 30px;
+}
+
+.telefone img{
+    margin-right: 30px;
+}
+
+.email img{
+    margin-right: 30px;
+}
+
+.ifood img{
+    margin-right: 20px;
+}
+
+.link-instagram, .link-facebook, .num-telefone, .link-email, .link-ifood{
+    font-family: 'nunito';
+    font-size: 24px;
+    margin-top: 29px;
+    color: black;
+    text-decoration: none;
+}
+
+/* .quemsomos{
+    padding: 12%;
+    font-size: 19pt;
+    font-family: "nunito";
+    font-weight: 515;
+} */
+
+.quemsomos{
+    background: linear-gradient(rgba(255, 255, 255, 0.7), (rgba(255, 255, 255, 0.7)));
+    /* height: 950px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quemsomos img{
+    /* background: linear-gradient(rgba(255, 255, 255,0.7), rgba(255, 255, 255,0.7)); */
+    /* height: 615px;  */
+    /* opacity: 10%; */
+    position: absolute;
+    z-index: -1;
+    /* top: 17vh; */
+    display: flex;
+    background-color: white;
+    opacity: 30%;
+} 
+
+.quemsomos p{
+    padding: 14%;
+    font-size: 17pt;
+    font-family: "nunito";
+    font-weight: 500;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.quemsomos button{
+    text-decoration: none;
+    color: #8F0002;
+}
+
+#quemsomos{
+    padding: 0;
+}
+
+#ebook{
+    padding: 50px;
+}
+
+footer{
+    background-color: #8F0002;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo_footer{
+    border-radius: 15px;
+}
+
+.footer_direito{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_direito a{
+    font-family: "Poppins", "sans-serif";
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 3%;
+}
+
+.footer_direito a:hover{
+    text-decoration: underline;
+}
